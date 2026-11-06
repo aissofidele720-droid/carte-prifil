@@ -1,0 +1,86 @@
+
+/* Réinitialisation des marges */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général de la page */
+body {
+    font-family: Arial, sans-serif;
+    background: #eef4ff;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteneur de la carte */
+.profile-card {
+    background: white;
+    width: 320px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Photo circulaire */
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #1769e0;
+    margin-bottom: 15px;
+}
+
+/* Nom */
+.profile-card h2 {
+    color: #12366b;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+/* Rôle professionnel */
+.role {
+    color: #1769e0;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Biographie */
+.bio {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Bouton */
+.profile-card button {
+    background: #1769e0;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* Effet au passage de la souris */
+.profile-card button:hover {
+    background: #12366b;
+    transform: scale(1.05);
+}
+
+/* Adaptation aux petits écrans */
+@media (max-width: 400px) {
+    .profile-card {
+        width: 90%;
+    }
+}
